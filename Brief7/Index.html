@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="./Style.css"
+    
+</head>
+    <body>
+
+        <div class="main">
+            <div class="form-box">
+                <div class="form-title"></div>
+                <div class="form-content">
+                    
+                    <form>
+    
+                        <div id="header">
+                            <h1>Ajouter un nouveau article</h1>
+                        </div>
+    
+                        <div class="personal-info">
+    
+                            <div class="input">
+                                <h2>Nom du article :</h2>
+                                <span id="NomOutput"></span><br>
+                                <input type="text" id="nom" placeholder="article">
+                            </div>
+    
+                            <div class="input">
+                                <h2>ça marque :</h2>
+                                <span id="PrénomOutput"></span><br>
+                                <input type="text" id="prénom" placeholder="Marque" max="30">
+                            </div>
+    
+                            <div class="input">
+                                <h2>Date de production :</h2>
+                                <span id="emailOutput"></span><br>
+                                <input type="date" id="Email" placeholder="Date">
+                            </div>
+    
+                            <div class="input">
+                                <h2>Type :</h2>
+                                <select name="type" id="TYpe">
+                                <option value="eng">Hygiène et toilette</option>
+                                <option value="rob">Soins esthétiques</option>
+                                <option value="tht">Produits solaires</option>
+                                <option value="eng">Beauté des mains et des pieds</option>
+                                <option value="rob">Produits de maquillage</option>
+                                <option value="tht">Entretien capillaires</option>
+                                <option value="tht">Parfums</option>
+                                </select>
+                                
+                            </div>
+                            <div class="promotion">
+                                <h2>promotion:</h2><br>
+                                <label for="OUI">Oui</label>
+                                <input type="radio" id="oui" name="Oui" >
+                                <label for="NOM">Nom</i></label>
+                                <input type="radio" id="nom" name="Oui">
+                            </div>
+    
+                        </div>
+                        <div>
+                            <button onClick="redirect()">Ajouter</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="white"></div>
+                <div class="blue"></div>
+            </div>
+        </div>
+    </body>
+
+
+</html>
