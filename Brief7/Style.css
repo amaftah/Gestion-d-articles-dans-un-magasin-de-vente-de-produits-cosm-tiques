@@ -27,6 +27,7 @@ body{
 	display: flex;
 	justify-content: flex-start;
 	align-content: flex-start;
+    border-end-start-radius: 10%;
 }
 
 .form-content {
