@@ -132,7 +132,6 @@ h2{
 }
 .TYpe{
 	display: grid;
-	
 	gap: 10px;
 }
 .table {
@@ -149,10 +148,14 @@ tr:nth-child(even) {
     background-color: #bb5858;
 }
 .table{
-    display: flex;
+    display: grid;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	align-content: flex-end;
 	gap: 10px;
+}
+#bt{
+	display: grid;
+	
 }
