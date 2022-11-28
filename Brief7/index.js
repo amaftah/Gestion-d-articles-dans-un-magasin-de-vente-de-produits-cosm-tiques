@@ -1,9 +1,14 @@
-let article = document.getElementById("Article").value;
-let marque = document.getElementById("Marque").value;
-let prix = document.getElementById("prix").value;
-let date = document.getElementById("date").value;
+function reflechire() {
+    let ajouter = document.querySelector("#ajouter");
+    ajouter.disabled = true;
+}
 
-function redirect(){
-    var x = 0;
-    if (x >)
+function Ajouter() {
+    let Nom = document.getElementById('nom').value;
+    let Marque = document.getElementById('marque').value;
+    let Prix = document.getElementById('prix').value;
+    let Date = document.getElementById('date').value;
+    let Type = document.getElementById('type').value;
+    let noPromo = document.getElementById('noPromo');
+    let Promo = document.getElementById('Promo');
 }
