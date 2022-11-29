@@ -44,7 +44,7 @@ function insertNewRow(e){
 
   e.preventDefault();
 
-  if (!checkEmptyInput()){ }
+  if (!checkEmptyInput()){ 
   // creat line 
 var line = document.createElement("tr");
 line.classList.add('newLine')
@@ -85,7 +85,7 @@ if (non.checked  ) {
   console.log("non")
   Npromotion.innerHTML = non.value;  
 }
-
+}
 
 
 

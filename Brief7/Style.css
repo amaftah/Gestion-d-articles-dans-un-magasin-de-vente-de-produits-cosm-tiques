@@ -34,7 +34,7 @@ body{
 	width: 95%;
 	height: 100%;
 	padding: 50px 0;
-	/* background: #6e2837; */
+	background: #6e2837; 
 	display: flex;
 }
 form {
