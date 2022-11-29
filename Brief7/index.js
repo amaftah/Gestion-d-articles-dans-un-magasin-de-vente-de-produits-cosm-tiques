@@ -42,50 +42,60 @@ let btn =document.getElementById("ajouter");
 btn.addEventListener("click", insertNewRow);
 function insertNewRow(e){
 
-  e.preventDefault();
+    e.preventDefault();
 
-  if (!checkEmptyInput()){ 
-  // creat line 
-var line = document.createElement("tr");
-line.classList.add('newLine')
-table.append(line)
-// add  td
-var nom = document.getElementById("Article").value;
-var marque = document.getElementById("Marque").value;
-var prix = document.getElementById("prix").value
-var date = document.getElementById("date").value;
-var type = document.getElementById("TYpe").value;
+    if (!checkEmptyInput()){ 
+    // creat line 
+  var line = document.createElement("tr");
+  line.classList.add('newLine')
+  table.append(line)
 
-var oui = document.getElementById("oui")
-var non = document.getElementById("non")
+  // add  td
+  var nom = document.getElementById("Article").value;
+  var marque = document.getElementById("Marque").value;
+  var prix = document.getElementById("prix").value
+  var date = document.getElementById("date").value;
+  var type = document.getElementById("TYpe").value;
 
-var  Narticle = document.createElement("td");
-line.append(Narticle)
-var  NMarque = document.createElement("td");
-line.append(NMarque)
-var  Nprix = document.createElement("td");
-line.append(Nprix)
-var  Ndate = document.createElement("td");
-line.append(Ndate)
-var  Ntype = document.createElement("td");
-line.append(Ntype)
-var  Npromotion = document.createElement("td");
-line.append(Npromotion)
+  var Button1 = document.createElement("button");
+  var button2 = document.createElement("button");
 
-Narticle.innerHTML = nom ;
-NMarque.innerHTML = marque;
-Nprix.innerHTML = prix;
-Ndate.innerHTML = date;
-Ntype.innerHTML = type;
-if (oui.checked  ) {
-  console.log("oui")
-  Npromotion.innerHTML = oui.value;
-}
-if (non.checked  ) {
-  console.log("non")
-  Npromotion.innerHTML = non.value;  
-}
-}
+  var oui = document.getElementById("oui")
+  var non = document.getElementById("non")
+
+  var  Narticle = document.createElement("td");
+  line.append(Narticle)
+  var  NMarque = document.createElement("td");
+  line.append(NMarque)
+  var  Nprix = document.createElement("td");
+  line.append(Nprix)
+  var  Ndate = document.createElement("td");
+  line.append(Ndate)
+  var  Ntype = document.createElement("td");
+  line.append(Ntype)
+  var  Npromotion = document.createElement("td");
+  line.append(Npromotion)
+  var  option = document.createElement("td");
+  line.append(option)
+  option.appendChild(Button1);
+  option.appendChild(button2);
+  Button1.innerText= 'modifier';
+  button2.innerText= 'supprimé';
+
+  Narticle.innerHTML = nom ;
+  NMarque.innerHTML = marque;
+  Nprix.innerHTML = prix;
+  Ndate.innerHTML = date;
+  Ntype.innerHTML = type;
+  if (oui.checked  ) {
+    console.log("oui")
+    Npromotion.innerHTML = oui.value;
+  }
+  if (non.checked  ) {
+    console.log("non")
+    Npromotion.innerHTML = non.value;  
+  }
+  }
 
 
 
