@@ -75,12 +75,16 @@ function insertNewRow(e){
   line.append(Ntype)
   var  Npromotion = document.createElement("td");
   line.append(Npromotion)
-  var  option = document.createElement("td");
-  line.append(option)
-  option.appendChild(Button1);
-  option.appendChild(button2);
+  var  option1 = document.createElement("td");
+  var  option2 = document.createElement("td");
+  line.append(option1)
+  line.append(option2)
+  option1.appendChild(Button1);
+  option2.appendChild(button2);
   Button1.innerText= 'modifier';
   button2.innerText= 'supprimé';
+
+ 
 
   Narticle.innerHTML = nom ;
   NMarque.innerHTML = marque;
@@ -94,11 +98,22 @@ function insertNewRow(e){
   if (non.checked  ) {
     console.log("non")
     Npromotion.innerHTML = non.value;  
-  }
-  }
+  } 
+  
+ // Button1.onclick=editRow;
+  button2.onclick=function deleteRow(){
+  let i= line.parentNode.parentNode;
+  alert(i);
+  }  
+
+
+}
 
 
 
+
+
+}
 
 
 
@@ -142,4 +157,4 @@ function insertNewRow(e){
     //  selectedRowToInput();
    
  
-}
+
