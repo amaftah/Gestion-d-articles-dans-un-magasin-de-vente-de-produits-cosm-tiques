@@ -101,9 +101,10 @@ function insertNewRow(e){
   } 
   
  // Button1.onclick=editRow;
-  button2.onclick=function deleteRow(){
-  let i= line.parentNode.parentNode;
-  alert(i);
+  button2.onclick=function deleteRow(r){
+    var i = r.parentNode.parentNode.rowIndex;
+    var table = document.getElementById("tab");
+    table.deleteRow(i);
   }  
 
 
